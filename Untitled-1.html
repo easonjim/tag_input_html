@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+<script src="jquery.tagsinput.js" type="text/javascript"></script>
+ <link href="tagsinput.css" type="text/css" rel="stylesheet">
+<title>无标题文档</title>
+<script type="text/javascript">
+$(function () {
+$("#txtTags").TagsInput({
+usedTags: "css|js|jquery|html|C#|.net|web",
+usedTagsName:"记忆标签",
+hotTags: "hotTag1|hotTag2|hotTag3|hotTag4",
+hotTagsName:"系统标签",
+tagNum: 10,
+maxWords: 10
+});
+});
+</script>
+
+</head>
+
+<body>
+
+<input type="text" value="逗号|分号|空格|Tab|回车键" name="txtTags" id="txtTags" />
+ <input type="button" value="button" onclick="alert($('#txtTags').val())" />
+</body>
+</html>
